@@ -200,6 +200,23 @@ export default function Settings({ session }) {
                 </div>
               ))}
               <button
+                onClick={handleConnectGmail}
+                style={{
+                  width: '100%',
+                  background: 'none',
+                  border: 'none',
+                  padding: '14px 16px',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  cursor: 'pointer',
+                  borderBottom: '1px solid var(--border)',
+                }}
+              >
+                <span style={{ fontSize: 14, color: 'var(--text)' }}>+ Connect another Gmail</span>
+                <span style={{ fontSize: 13, color: '#60A5FA' }}>→</span>
+              </button>
+              <button
                 onClick={handlePollNow}
                 disabled={polling}
                 style={{
